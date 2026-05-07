@@ -26,19 +26,21 @@ public class CesarBasique {
         }
         return resultat.toString(); // On transforme le seau en texte et on le renvoie
     }
+    
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+    // Message fixé pour les tests
+        public static void main(String[] args) {
 
-        System.out.print("Entrez votre message : ");
-        String message = scanner.nextLine();
+        // Message fixe
+        String message = "Bonjour Olivier";
 
+        // Chiffrement
         String messageChiffre = chiffrer(message);
 
+        // Affichage
         System.out.println("Message original : " + message);
         System.out.println("Message chiffre  : " + messageChiffre);
         System.out.println("Cle utilisee     : k = 3 (fixe)");
-
-        scanner.close();
     }
+
 }
