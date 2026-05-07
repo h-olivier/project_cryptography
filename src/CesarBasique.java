@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 public class CesarBasique {
 
@@ -26,7 +25,7 @@ public class CesarBasique {
         }
         return resultat.toString(); // On transforme le seau en texte et on le renvoie
     }
-    
+
 
     // Message fixé pour les tests
         public static void main(String[] args) {
