@@ -111,7 +111,6 @@ public class VigenereAvance {
                     "Erreur : la clé doit contenir uniquement des lettres."
             );
 
-            return;
         }
 
         // Chiffrement
