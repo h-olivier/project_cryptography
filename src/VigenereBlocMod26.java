@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CryptoBlocMod26 {
+public class VigenereBlocMod26 {
 
     // ==========================================
     // CHIFFREMENT
