@@ -61,56 +61,56 @@ public class VigenereBlocMod26 {
     // ==========================================
     // DECHIFFREMENT
     // ==========================================
-    public static String dechiffrer(String message, int[] cle) {
+    // public static String dechiffrer(String message, int[] cle) {
 
-        String resultat = "";
+    //     String resultat = "";
 
-        int indexCle = 0;
+    //     int indexCle = 0;
 
-        // Parcours
-        for (int i = 0; i < message.length(); i++) {
+    //     // Parcours
+    //     for (int i = 0; i < message.length(); i++) {
 
-            char c = message.charAt(i);
+    //         char c = message.charAt(i);
 
-            // ==========================
-            // SI LETTRE
-            // ==========================
-            if (Character.isLetter(c)) {
+    //         // ==========================
+    //         // SI LETTRE
+    //         // ==========================
+    //         if (Character.isLetter(c)) {
 
-                int k = cle[indexCle % 4];
+    //             int k = cle[indexCle % 4];
 
-                // Minuscule
-                if (Character.isLowerCase(c)) {
+    //             // Minuscule
+    //             if (Character.isLowerCase(c)) {
 
-                    char dechiffre =
-                            (char) (((c - 'a' - k + 26) % 26) + 'a');
+    //                 char dechiffre =
+    //                         (char) (((c - 'a' - k + 26) % 26) + 'a');
 
-                    resultat += dechiffre;
-                }
+    //                 resultat += dechiffre;
+    //             }
 
-                // Majuscule
-                else if (Character.isUpperCase(c)) {
+    //             // Majuscule
+    //             else if (Character.isUpperCase(c)) {
 
-                    char dechiffre =
-                            (char) (((c - 'A' - k + 26) % 26) + 'A');
+    //                 char dechiffre =
+    //                         (char) (((c - 'A' - k + 26) % 26) + 'A');
 
-                    resultat += dechiffre;
-                }
+    //                 resultat += dechiffre;
+    //             }
 
-                indexCle++;
-            }
+    //             indexCle++;
+    //         }
 
-            // ==========================
-            // ESPACE
-            // ==========================
-            else if (c == ' ') {
+    //         // ==========================
+    //         // ESPACE
+    //         // ==========================
+    //         else if (c == ' ') {
 
-                resultat += ' ';
-            }
-        }
+    //             resultat += ' ';
+    //         }
+    //     }
 
-        return resultat;
-    }
+    //     return resultat;
+    // }
 
     // ==========================================
     // AFFICHAGE BLOCS
@@ -179,7 +179,7 @@ public class VigenereBlocMod26 {
         // ==========================
         // DECHIFFREMENT
         // ==========================
-        String dechiffre = dechiffrer(crypte, cle);
+        // String dechiffre = dechiffrer(crypte, cle);
 
         // ==========================
         // AFFICHAGE
@@ -203,8 +203,8 @@ public class VigenereBlocMod26 {
 
         afficherBlocs(crypte);
 
-        System.out.println("\nMESSAGE DÉCHIFFRÉ :");
-        System.out.println(dechiffre);
+        // System.out.println("\nMESSAGE DÉCHIFFRÉ :");
+        // System.out.println(dechiffre);
 
         scanner.close();
     }
