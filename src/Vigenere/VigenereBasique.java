@@ -1,3 +1,4 @@
+package Vigenere;
 public class VigenereBasique {
 
     // Méthode de chiffrement
